@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, Image, Form, Card, Button, ListGroup } from 'react-bootstrap'
-import { addToCart } from '../actions/cartAction'
+import { addToCart, removeFromCart } from '../actions/cartAction'
 
 
 const CartScreen = ({ match, location, history }) => {
@@ -24,7 +24,7 @@ const CartScreen = ({ match, location, history }) => {
     }, [dispatch, productId, qty])
 
     const removeFromCartHandler = (id) => {
-
+        dispatch(removeFromCart(id))
 
         console.log('remove')
 
