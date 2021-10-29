@@ -4,7 +4,6 @@ import { Row, Col, Image, ListGroup, Card, Button, Form } from 'react-bootstrap'
 import Rating from '../components/Rating'
 import { useDispatch, useSelector } from 'react-redux'
 import { listProductDetails } from '../actions/productActions'
-import Product from '../components/Product'
 
 const ProductScreen = ({ match, history }) => {
     const [qty, setQty] = useState(1)
