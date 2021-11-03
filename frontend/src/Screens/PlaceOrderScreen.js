@@ -40,6 +40,7 @@ const PlaceOrderScreen = ({ history }) => {
             taxPrice: cart.taxPrice,
             totalPrice: cart.totalPrice,
         }))
+        console.log(cart.totalPrice);
     }
 
 
